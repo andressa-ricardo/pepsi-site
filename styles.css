@@ -1,0 +1,228 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(38, 85, 180);
+    transition: 0.3s;
+}
+
+.logo{
+    max-width: 55px;
+}
+
+.black{
+    background-color: rgb(19, 16, 16);
+}
+
+.red{
+    background-color: rgb(181, 32, 32);
+}
+
+.container{
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    margin: 0 auto;
+    min-height: 100vh;
+}
+
+header{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 0px;
+}
+
+ul{
+    display: flex;
+    gap: 20px;
+}
+
+ul > li{
+    list-style: none;
+}
+
+li > button{
+    color: white;
+}
+
+button{
+    background: none;
+    outline: none;
+    border: none;
+}
+
+main{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+    width: 100%;
+}
+
+section:first-child{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    
+}
+
+section:first-child > div p{
+    font-size: 18px;
+    text-align: justify;
+}
+
+section:first-child > div:last-child{
+    padding-left: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+section:first-child > div:last-child button{
+    color: rgb(54, 50, 50);
+    padding: 8px 10px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 15px;
+    font-size: 13px;
+    cursor: pointer;
+}
+
+section:first-child > div:last-child *{
+    color: white;
+}
+
+section:first-child h1{
+    color: white;
+    display: flex;
+    flex-direction: column;
+    line-height: 90px;
+}
+
+section:first-child div:last-child{
+    display: flex;
+    gap: 30px;
+}
+
+
+section span:first-child{
+    font-size: 70px;
+    font-family: 'Merriweather Sans', sans-serif;
+    font-weight: bold;
+
+}
+
+section span:last-child{
+    font-size: 130px;
+    font-family: 'Merriweather Sans', sans-serif;
+    font-weight: bold;
+}
+
+.mexer .buttons{
+    display: flex;
+    gap: 30px;
+}
+
+
+#pepsi-blue{
+    height: 420px;
+    max-width: auto;
+    max-height: auto;
+}
+
+footer button{
+    height: 60px;
+}
+
+footer div{
+    display: flex;
+    gap: 30px;
+}
+
+footer div button{
+    transition: 0.5s;
+}
+
+footer div button:hover{
+    transform: translateY(-20%);
+}
+
+@keyframes animation-in {
+    to {
+        transform: translateY(-20%);
+    }
+}
+
+
+@keyframes animation-out {
+    from {
+        transform: translateY(0%);
+    }
+}
+
+footer button img{
+    max-width: 100%;
+    max-height: 100%;
+}
+
+
+@media (max-width:800px){
+    main{
+        flex-direction: column-reverse;
+    }
+
+    section:first-child {
+        align-items: center;
+    }
+
+    section:first-child > div:last-child{
+        align-items: center;
+    }
+
+    .container{
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .logo{
+        max-width: 35px;
+    }
+
+    #pepsi-blue{
+        height: 400px;
+        max-width: auto;
+        max-height: auto;
+    }
+}
+
+@media (max-width:1200px){
+    .container{
+        width: 95%;
+    }
+
+    #pepsi-blue{
+        height: 450px;
+        max-width: auto;
+        max-height: auto;
+    }
+
+    section span:first-child{
+        font-size: 50px;
+        font-family: 'Merriweather Sans', sans-serif;
+        font-weight: bold;
+    
+    }
+    
+    section span:last-child{
+        font-size: 110px;
+        font-family: 'Merriweather Sans', sans-serif;
+        font-weight: bold;
+    }
+}
